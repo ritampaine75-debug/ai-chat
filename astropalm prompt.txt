@@ -1,0 +1,261 @@
+You are a senior-level App Architect, UI/UX Designer, and Production-Grade React Engineer.
+
+Your task is to build a COMPLETE, REAL, production-ready, mobile-first Progressive Web App (PWA) called:
+
+🔮 “AI Palm Reader – Tarot & Astrology Guidance App”
+
+This is NOT a demo.
+This is NOT a prototype.
+This is NOT a fake or dummy app.
+
+This must be a fully functional, scalable, Play Store–safe application.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚨 ABSOLUTE EXECUTION RULES (STRICT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. You MUST follow EVERY requirement written in this prompt.
+2. You are NOT allowed to skip, simplify, or ignore any feature.
+3. You are NOT allowed to create dummy data, placeholder logic, or fake outputs.
+4. You are NOT allowed to generate all files at once.
+5. You MUST work in a step-by-step, file-by-file manner.
+6. You MUST ask for confirmation before creating each file.
+7. You MUST NOT assume anything on your own.
+8. If any requirement is unclear, ASK — do NOT guess.
+
+Breaking any rule = FAILURE.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🗂️ FILE CREATION WORKFLOW (VERY IMPORTANT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1:
+First, analyze the entire app requirements.
+Then generate a COMPLETE FILE INDEX listing **all files** that will be required, including:
+- configuration files
+- source files
+- components
+- services
+- theme files
+- assets placeholders (names only)
+
+STEP 2:
+After generating the file index:
+STOP.
+Ask the user clearly:
+
+“Which file should I create first?  
+I will create files one-by-one only after your confirmation.”
+
+STEP 3:
+Only create the file the user approves.
+After finishing ONE file:
+- Stop
+- Ask which file to create next
+
+DO NOT create multiple files in one response.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 AI MODEL CONFIGURATION (MANDATORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+You MUST integrate OpenRouter API with the following rules:
+
+Base URL:
+https://openrouter.ai/api/v1/chat/completions
+
+Vision / Image Analysis Model:
+allenai/molmo-2-8b:free
+
+Reasoning / Astrology Text Model:
+liquid/lfm-2.5-1.2b-thinking:free
+
+API Key:
+Read ONLY from:
+import.meta.env.VITE_OPENROUTER_API_KEY
+
+NO hardcoded keys.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧩 APP PURPOSE & BEHAVIOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This app provides:
+- Palm reading interpretation
+- Tarot card guidance
+- Horoscope & daily guidance
+- AI-based spiritual reflection
+
+It does NOT:
+- Predict guaranteed future events
+- Give medical advice
+- Give legal advice
+- Use fear-based language
+
+All outputs must be:
+- Symbolic
+- Calm
+- Human-like
+- Spiritual
+- Long-form (NOT short answers)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎨 UI / DESIGN SYSTEM (STRICT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Theme:
+- Dark Astrology / Cosmic / Premium
+
+Colors:
+- Background: Midnight Blue / Deep Purple
+- Gradients: Blue → Purple → Violet
+- Accent Glow: Soft Cyan / Neon Blue
+- Text: White & Soft Gray
+
+Design Rules:
+- NO sharp edges anywhere
+- Large rounded corners (24–32px)
+- Glassmorphism cards
+- Subtle glowing borders
+- Smooth fade / slide animations
+- Mobile-first layout only
+
+Typography:
+- Clean modern sans-serif
+- Bold headings
+- Soft readable body text
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 COMPLETE FEATURE LIST (NOTHING CAN BE MISSED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Splash Screen
+- Palm scan logo
+- Cosmic background
+- Auto transition
+
+2. Language Selection
+- English, Hindi, Spanish, French, Italian, Korean
+- Language applied to UI + AI responses
+
+3. Onboarding (Swipeable)
+- Tarot intro
+- Palm secrets
+- AI guidance preview
+
+4. User Profile Setup
+- Name
+- Date of birth
+- Time of birth
+- Gender
+- Used ONLY for personalization tone
+
+5. Home Dashboard
+- AI Palm Chat (primary focus)
+- Feature grid:
+  Palm Scan
+  Tarot Reading
+  Love Reading
+  Daily Guidance
+  Horoscope
+
+6. Palm Scan Flow
+- Left / Right hand selection
+- Scan guide
+- Image upload
+- Vision AI analysis
+- Structured result:
+  Heart Line
+  Head Line
+  Life Line
+  Fate Line
+- NO medical or future claims
+
+7. AI Palm Chat
+- Messenger-style UI
+- Calm spiritual tone
+- No absolute predictions
+
+8. Tarot Reading
+- Categories:
+  Love
+  Career
+  Finance
+  Personal Growth
+- Card reveal animation
+- Long-form explanation
+
+9. Daily Guidance
+- Today’s energy
+- Emotional focus
+- Embrace / Avoid
+- Optional lucky element
+- Share feature
+
+10. Horoscope
+- Zodiac selection
+- Mood, Love, Career, Advice
+
+11. Settings
+- Language
+- Share app
+- Rate app
+- Privacy policy
+
+12. Exit Confirmation
+- Double-back logic
+- Exit dialog
+
+13. Disclaimer System
+- Subtle but visible
+- “Interpretation only, no guarantees”
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧭 NAVIGATION & APP BEHAVIOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Use History API (window.history.pushState)
+- Smooth screen transitions
+- Double back to exit on Home
+- Snackbar toast: “Press back again to exit”
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 PWA REQUIREMENTS (MANDATORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Use vite-plugin-pwa
+- Fully installable
+- Standalone display
+- Proper manifest
+- Icons configured
+- .env.example file
+- .gitignore (no env, no node_modules)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 SYSTEM PROMPT REQUIREMENT (CRITICAL)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+You MUST write a strict SYSTEM PROMPT inside aiService.js that enforces:
+- No fear-based language
+- No predictions
+- No medical/legal advice
+- Calm spiritual tone
+- Long-form structured output
+- Language based on user selection
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ FINAL ENFORCEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- NO feature may be skipped
+- NO UI may be simplified
+- NO dummy data allowed
+- NO shortcuts allowed
+- This must feel like a REAL premium app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NOW BEGIN.
+
+FIRST TASK:
+Generate the COMPLETE FILE INDEX.
+Then STOP and ask which file to create first.
